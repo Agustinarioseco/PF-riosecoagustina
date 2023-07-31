@@ -1,0 +1,145 @@
+@media (min-width: 700px) and (max-width: 1200px){
+    main{
+        #main-contactos {
+            overflow-x: hidden;
+            display: grid;
+            grid-template-areas: 
+            "contacto1"
+             "mapa" 
+             "formulario";
+             grid-template-columns: 1fr;
+            grid-template-rows: 500px 500px 500px;
+            justify-items: center;
+            .titulo-contacto {
+                font-size: 25px;
+                height: 35px;
+                width: 500px;
+                padding: 5px;
+                margin: 10px 45px;
+                border-radius: 10px;
+                text-align: center;
+                }
+                nav{
+                    .lista-contacto {
+                        font-size: 20px;
+                        width: 500px;
+                        text-align: start;
+                        .iconos {
+                            @include sizes-iconos;
+                        }  
+                        .texto6 {
+
+
+                            font-size: 20px;
+                            padding: 10px;
+                            margin: 10px;
+                            &:hover {
+                                @include hover;
+                            }
+                        }
+                    }
+                }
+            div{
+                iframe{
+                    height: 400px;
+                    width: 500px;
+                    padding: 5px;
+                    margin: 5px 45px;
+                }
+            }
+            div{
+                form{
+                    div{
+                        input {
+                            font-size: 20px;
+                            width: 500px;
+                            padding: 5px;
+                            margin: 5px 45px;
+                        }
+                        textarea {
+                            font-size: 20px;
+                            width: 500px;
+                            padding: 5px;
+                            margin: 5px 45px;
+                        }
+                        button {
+                            font-size: 20px;
+                            width: 500px;
+                            padding: 5px;
+                            margin: 5px 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    @media (min-width: 320px) and (max-width: 699px){
+    main{
+        #main-contactos {
+            overflow-x: hidden;
+            display: grid;
+            grid-template-areas: 
+            "contacto1" 
+            "mapa" 
+            "formulario";
+            grid-template-columns: 1fr;
+            grid-template-rows: 320px 320px 450px;
+            justify-items: center;
+            .titulo-contacto {
+                text-align: center;
+                font-size:$font-20px;
+                height:35px;
+                width:300px;
+                padding:5px;
+                margin:10px 30px;
+                border-radius:10px;
+                }
+                nav{
+                    .lista-contacto {
+                        font-size: 12px;
+                        height: 230px;
+                        width: 300px;
+                        padding: 15px;
+                        margin: 10px;
+                        text-align: start;
+                        .iconos {
+                            height: 30px;
+                            width: 30px;
+                            padding: 5px;
+                            margin: 5px;
+                        }
+                        .texto6 {
+                            font-size: 12px;
+                            a:hover {
+                                @include hover;
+                            }
+                        }
+                    }
+                }
+            div{
+                iframe{
+                    height: 250px;
+                    width: 300px;
+                    padding: 5px;
+                    margin: 10px 30px;
+                }
+            }
+            div{
+                form{
+                    div{
+                        input {
+                            @include contactos-form;
+                        }
+                        textarea {
+                            @include contactos-form;
+                        }
+                        button {
+                            @include contactos-form;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
